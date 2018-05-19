@@ -1,0 +1,29 @@
+{
+    "Id": "Policy1516191698715",
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Stmt1516191605792",
+            "Action": "s3:*",
+            "Effect": "Deny",
+            "Resource": "arn:aws:s3:::luckyr14",
+            "Principal": {
+                "AWS": [
+                    "arn:aws:iam::061132887128:user/Palak"
+                ]
+            }
+        },
+        {
+            "Sid": "Stmt1516191694205",
+            "Action": "s3:*",
+            "Effect": "Allow",
+            "Resource": "arn:aws:s3:::luckyr14",
+            "Principal": {
+                "AWS": [
+                    "arn:aws:iam::061132887128:user/Lakshman",
+                    "arn:aws:iam::061132887128:user/Vivek"
+                ]
+            }
+        }
+    ]
+}
